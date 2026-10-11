@@ -66,3 +66,24 @@ npm run serve
 - Пока компилятор не собрал код без ошибок, изменения не попадут в Studio.
 - Во время Play-теста плагин Rojo не может делать HTTP (ошибка `Http requests can only be executed by game server`) — это нормально, код уже синхронизирован до запуска.
 - Мультиплеер для теста: **Test → Server and Clients (F7)**, затем **Test → Add Clients**.
+
+## Git и GitHub
+
+Репозиторий: **https://github.com/DenHelloWorld/roblox-students**
+
+- **Commit** — сохранить изменения в историю. **Discard** — отменить (вернуть к последнему коммиту). Не путать!
+- Отправить на GitHub: VS Code → Source Control → **Commit** → **Sync Changes** (или `git push`).
+- В git не попадают `node_modules`, `out`, `include` (см. `.gitignore`). Файл карты `game.rbxl` — в репозитории.
+
+## Публикация игры
+
+1. Открой `game.rbxl` и подключи Rojo (код синхронизируется в плейс).
+2. **File → Publish to Roblox As…** → создай/выбери игру → **Publish**.
+3. Roblox сам поднимает серверы — отдельно «деплоить сервер» не нужно.
+
+## Заметки разработчика
+
+- Rojo синхронизирует **только код**. Карта (`game.rbxl`) живёт отдельно и не откатывается.
+- Позиции объектов в Rojo-проекте задаются через **CFrame** (свойство `Position` Rojo не применяет).
+- Системное **Esc-меню** Roblox убрать нельзя; **чат** настраивается через `TextChatService` (в Studio или кодом).
+- **Сервер** (`src/server`) — хозяин состояния, **клиент** (`src/client`) — интерфейс. Общение через RemoteEvent.
