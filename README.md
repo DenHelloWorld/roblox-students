@@ -5,14 +5,14 @@
 ## Что где лежит (главное)
 
 - **Код** (TypeScript) — в `src/`, пишется в **VS Code**. Rojo льёт его в Studio.
-- **Карта** (пол, стол, дом, спавны) — в файле **`game.rbxlx`**, редактируется в **Studio**, сохраняется через **Ctrl+S**.
+- **Карта** (пол, стол, дом, спавны) — в файле **`game.rbxl`**, редактируется в **Studio**, сохраняется через **Ctrl+S**.
 
 Rojo управляет **только кодом** (в `default.project.json` нет `Workspace`), поэтому всё, что ты наставишь в Studio, **не откатывается**.
 
 ## Структура
 
 ```
-game.rbxlx                — КАРТА (открывается и правится в Studio)
+game.rbxl                — КАРТА (открывается и правится в Studio)
 src/
   client/main.client.tsx  — клиентский код (React-интерфейс)
   server/main.server.ts   — серверный код
@@ -37,14 +37,14 @@ npm run serve
 
 ## Roblox Studio
 
-1. Открой файл карты: **File → Open → `C:\students\roblox\game.rbxlx`**.
+1. Открой файл карты: **File → Open → `C:\students\roblox\game.rbxl`**.
 2. Вкладка **PLUGINS** → **Rojo** → **Connect** → **Accept**.
 3. Нажми **Play (F5)** — появится зелёная плашка «Связь с React установлена!».
 
 ## Строишь карту
 
 1. Двигай/добавляй объекты в Studio.
-2. **Ctrl+S** — изменения сохраняются в `game.rbxlx`.
+2. **Ctrl+S** — изменения сохраняются в `game.rbxl`.
 3. В VS Code сделай `git commit` — версия карты попадёт в историю.
 
 ## Пишешь код
