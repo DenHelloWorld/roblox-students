@@ -22,7 +22,25 @@
 						"$path": "node_modules/@rbxts"
 					},
 					"@rbxts-js": {
-						"$path": "node_modules/@rbxts-js"
+						"$path": "node_modules/@rbxts-js",
+						"React": {
+							"$path": "node_modules/@rbxts-js/react/src"
+						},
+						"ReactRoblox": {
+							"$path": "node_modules/@rbxts-js/react-roblox/src"
+						},
+						"ReactGlobals": {
+							"$path": "node_modules/@rbxts-js/react-globals/src"
+						},
+						"ReactReconciler": {
+							"$path": "node_modules/@rbxts-js/react-reconciler/src"
+						},
+						"Scheduler": {
+							"$path": "node_modules/@rbxts-js/scheduler/src"
+						},
+						"Shared": {
+							"$path": "node_modules/@rbxts-js/shared/src"
+						}
 					}
 				}
 			},
@@ -43,6 +61,16 @@
 			"$className": "Workspace",
 			"$properties": {
 				"FilteringEnabled": true
+			},
+			"Baseplate": {
+				"$className": "Part",
+				"$properties": {
+					"Size": [512, 20, 512],
+					"Position": [0, -10, 0],
+					"Anchored": true,
+					"Color": [0.25, 0.25, 0.25],
+					"Material": "Plastic"
+				}
 			}
 		},
 		"HttpService": {

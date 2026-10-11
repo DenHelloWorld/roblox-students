@@ -2,6 +2,8 @@ import React from "@rbxts/react";
 import ReactRoblox from "@rbxts/react-roblox";
 import { Players } from "@rbxts/services";
 
+print("[students] client script started");
+
 function HelloRoblox() {
 	return (
 		<screengui ResetOnSpawn={false}>
@@ -21,3 +23,4 @@ function HelloRoblox() {
 const playerGui = Players.LocalPlayer.WaitForChild("PlayerGui") as PlayerGui;
 const root = ReactRoblox.createRoot(playerGui);
 root.render(<HelloRoblox />);
+print("[students] rendered plate");
