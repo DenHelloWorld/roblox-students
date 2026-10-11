@@ -30,14 +30,14 @@
         <Color3uint8 name="Color3uint8">10724259</Color3uint8>
         <token name="Material">272</token>
         <Vector3 name="Position">
-          <X>0</X>
+          <X>7</X>
           <Y>0.5</Y>
-          <Z>0</Z>
+          <Z>5</Z>
         </Vector3>
         <Vector3 name="size">
-          <X>12</X>
+          <X>8</X>
           <Y>1</Y>
-          <Z>12</Z>
+          <Z>8</Z>
         </Vector3>
       </Properties>
     </Item>
